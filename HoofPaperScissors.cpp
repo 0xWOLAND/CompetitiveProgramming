@@ -6,14 +6,16 @@ struct hps{
         int s;
 };
 int main() {
+      ifstream fin("hps.in");
+      ofstream fout("hps.out");
         int n;
-        cin >> n;
+        fin >> n;
         std::vector<hps> arr(n + 1);
 
         arr[0] = {0,0,0};
         for(int i = 0; i < n; i++) {
                 char c;
-                cin >> c;
+                fin >> c;
                 arr[i + 1] = arr[i];
                 if(c == 'P') arr[i + 1].p++;
                 if(c == 'H') arr[i + 1].h++;
@@ -25,5 +27,5 @@ int main() {
           tmp += max(arr[n].h - arr[i].h, max(arr[n].p - arr[i].p, arr[n].s - arr[i].s));
           ans = max(ans, tmp);
         }
-        cout << ans << "\n";
+        fout << ans << "\n";
 }
