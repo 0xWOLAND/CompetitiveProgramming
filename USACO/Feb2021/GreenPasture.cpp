@@ -77,5 +77,5 @@ int main()
     auto stop = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
     cout << ans << "\n";
-    cout << "Speed: " << duration.count() << "\n";
+    cout << "Speed: " << duration.count() << "ms \n";
 }
