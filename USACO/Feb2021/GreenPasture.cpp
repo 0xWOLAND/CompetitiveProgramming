@@ -1,19 +1,16 @@
 #include <bits/stdc++.h>
-#include <chrono>
 using namespace std;
 int main()
 {
-    auto start = std::chrono::high_resolution_clock::now();
-    ifstream fin("TestSpeed.in");
     int n;
-    fin >> n;
+    cin >> n;
     int field[n][n];
     int prefix[n + 1][n + 1];
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
         {
-            fin >> field[i][j];
+            cin >> field[i][j];
             if (field[i][j] < 100)
                 field[i][j] = -1000;
             else if (field[i][j] == 100)
@@ -38,7 +35,7 @@ int main()
     }
 
 
-    int ans = 0;
+    unsigned long long ans = 0;
 
     for (int i = -1; i < n; i++)
     {
@@ -50,7 +47,6 @@ int main()
                 {
                     if (i == -1 && j == -1 && prefix[r][c] > 0)
                     {
-                        printf("(%d, %d) -> (%d, %d)\n", i, j, r, c);
                         ans++;
                     }
                     else if (j > -1 && i == -1 && prefix[r][c] - prefix[r][j] > 0)
@@ -74,8 +70,5 @@ int main()
         }
     }
 
-    auto stop = std::chrono::high_resolution_clock::now();
-    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
     cout << ans << "\n";
-    cout << "Speed: " << duration.count() << "ms \n";
 }

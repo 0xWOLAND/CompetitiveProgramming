@@ -1,14 +1,11 @@
 
 
 import random
-n = 50
-x = random.sample([random.randint(0,n / 4) for i in range(n)], n)
-y = random.sample([random.randint(0,n / 4) for i in range(n)], n)
+size = random.randint(1, 109)
+n = 65536
 
-print(len(x))
-for i, j in zip(x, y):
-    print(i, j)
-
-
-for i, j in zip(x, y):
-    print("({}, {})".format(i, j))
+nums = random.sample(range(1, 65536), size)
+k = random.randint(1, len(nums))
+print(len(nums), k)
+for num in nums:
+    print(num)

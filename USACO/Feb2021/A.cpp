@@ -23,47 +23,39 @@ int roundDown(int n)
 int main()
 {
 
+
     int n, k;
     cin >> n >> k;
-
+    k--;
     vector<int> arr(n);
-
+    vector<int> dist(n - 1);
     for (int i = 0; i < n; i++)
+    {
         cin >> arr[i];
+    }
     arr.push_back(0);
+
     sort(arr.rbegin(), arr.rend());
-    vector<int> dist(n);
     for (int i = 0; i < n; i++)
     {
         dist[i] = arr[i] - arr[i + 1];
     }
+    dist.push_back(arr[n - 1]);
     sort(dist.rbegin(), dist.rend());
-
-    if (k == 1)
-    {
-        cout << roundUp(arr[n - 1]) << "\n";
-    }
-    k -= 2;
     int ans = 0;
-    int l = 0, r = 1;
-    while (l < n)
+    int prev = 0;
+    for (int i = 0; i < n; i++)
     {
-
-        auto idx = find(dist.begin(), dist.end(), arr[l] - arr[r]);
-
-        if (distance(dist.begin(), idx) > k)
+        int idx = distance(dist.begin(), find(dist.begin(), dist.end(), arr[i] - arr[i + 1]));
+        if (idx < k && k > 0)
         {
-            r++;
-        }
-        else if (k)
-        {
-            dist.erase(idx);
-            int diff = roundUp(arr[l]) - roundDown(arr[r - 1]);
-            ans += diff;
-            l = r;
-            r++;
             k--;
+            dist.erase(idx + dist.begin());
+            ans += roundUp(arr[prev]) - roundDown(arr[i]);
+            prev = i + 1;
         }
     }
+
     cout << ans << "\n";
+    return 0;
 }
