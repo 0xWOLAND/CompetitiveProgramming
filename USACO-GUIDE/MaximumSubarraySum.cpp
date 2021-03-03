@@ -1,25 +1,23 @@
 #include <bits/stdc++.h>
 using namespace std;
-typedef long long ll;
+
 int main()
 {
-    ll n;
+    int n;
     cin >> n;
-
-    vector<ll> arr(n + 1);
-    ll high = -1, idx = 0;
-    for (int i = 0; i < n; i++)
-    {
-        ll u;
-        cin >> u;
-        arr[i + 1] = arr[i] + u;
-        high = max(high, arr[i + 1]);
-        idx = i + 1;
-    }
-    ll ans = arr[0];
-
-    for(int i = 1; i < idx; i++){
-        ans = max(ans, high - arr[i]);
-    }
-    cout << ans << "\n";
+    vector<int> arr(n);
+    int max_so_far = 0, max_ending_here = 0;
+   for (int i = 0; i < n; i++)
+   {
+       max_ending_here = max_ending_here + arr[i];
+       if (max_ending_here < 0)
+           max_ending_here = 0;
+ 
+       /* Do not compare for all elements. Compare only   
+          when  max_ending_here > 0 */
+       else if (max_so_far < max_ending_here)
+           max_so_far = max_ending_here;
+   }
+   cout << max_so_far << "\n";
+    return 0;
 }
