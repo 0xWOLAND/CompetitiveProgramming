@@ -3,24 +3,26 @@ using namespace std;
 
 void solve(int tc){
 	string s; cin >> s;
-	
+
 	string ans = "";
 	int n = s.length();
+	s = '0' + s + '0';	
 	
-	char cur = '0';
-	for(int i = 0; i < n; i++){
+	for(int i = 1; i <= n + 1; i++){
+		char cur = s[i - 1];
 		if(s[i] > cur){
-			ans += "(";
+			string t(s[i] - cur, '(');
+			ans += t;
 		}
 		else if(s[i] < cur){
-			ans += ")";
+			string t(cur - s[i], ')');
+			ans += t;
 		}
 		ans += s[i];
 		cur = s[i];
 	}
-	if(s[n - 1] == '1') ans += ')';
 	printf("Case #%d: ", tc);
-	cout << ans << "\n";
+	cout << ans.substr(0, ans.length() - 1) << "\n";
 }
 
 int main() {
