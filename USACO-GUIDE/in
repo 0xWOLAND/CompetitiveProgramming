@@ -1,3 +1,0 @@
-if(y_dist < x_dist){
-					stopped[n_idx] = 1;
-					who[n_idx] = e_idx;
