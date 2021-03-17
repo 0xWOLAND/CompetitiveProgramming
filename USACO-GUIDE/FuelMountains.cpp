@@ -1,25 +1,5 @@
 /// Containers Start 
-#include <iostream> 
-#include <string> 
-#include <set> 
-#include <map> 
-#include <stack> 
-#include <queue> 
-#include <vector> 
-#include <utility> 
-#include <iomanip> 
-#include <sstream> 
-#include <bitset> 
-#include <cstdlib> 
-#include <iterator> 
-#include <algorithm> 
-/// C Header Files 
-#include <cstdio> 
-#include <cctype> 
-#include <cmath> 
-#include <math.h> 
-#include <ctime> 
-#include <cstring> 
+#include <bits/stdc++.h>
 /// Containers End 
  
  
@@ -138,39 +118,33 @@ void setIO(string s) {
   freopen((s + ".out").c_str(), "w", stdout);
 }
 
-struct Number {
-	ll val, id;
-};
 
-bool cmp(Number a, Number b){
-	if(a.val == b.val){
-		return a.id < b.id;
+void solve() {
+	int n; sf1(n);
+	vi arr(n);
+	for(int i = 0; i < n; i++) cin >> arr[i];
+	int ans = 0;
+	int tmp = 0;
+	int maxVal = INT_MIN;
+	bool noNegative = false;
+	for(int i = 0; i < n; i++){
+		maxVal = max(maxVal, arr[i]);
+		if(arr[i] > 0) noNegative = 1;
+		tmp = max(0, tmp + arr[i]);
+		ans = max(ans, tmp);
 	}
-	return a.val < b.val;
+	if(noNegative){
+		deb(ans);
+	}
+	else{
+		deb(maxVal);
+	}
+		
 }
 int main() {
-	ll n, x;
-	cin >> n >> x;
-	vector<Number> arr(n);
-	for(int i = 0; i < n; i++){
-		cin >> arr[i].val;
-		arr[i].id = i;
+	int tc; cin >> tc;
+	for(int i = 0; i < tc; i++){
+		solve();
 	}
-	sort(all(arr), cmp);
-	int l = 0, r = n - 1;
-	while(l != r){
-		ll cur = arr[l].val + arr[r].val;
-		if(cur < x){
-			l++;
-		}
-		else if(cur > x){
-			r--;
-		}
-		else{
-			deb(arr[l].id + 1, arr[r].id + 1);
-			return 0;
-		}
-	}
-	deb("IMPOSSIBLE");
     return 0;
 }

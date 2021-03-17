@@ -1,25 +1,5 @@
 /// Containers Start 
-#include <iostream> 
-#include <string> 
-#include <set> 
-#include <map> 
-#include <stack> 
-#include <queue> 
-#include <vector> 
-#include <utility> 
-#include <iomanip> 
-#include <sstream> 
-#include <bitset> 
-#include <cstdlib> 
-#include <iterator> 
-#include <algorithm> 
-/// C Header Files 
-#include <cstdio> 
-#include <cctype> 
-#include <cmath> 
-#include <math.h> 
-#include <ctime> 
-#include <cstring> 
+#include <bits/stdc++.h>
 /// Containers End 
  
  
@@ -139,7 +119,7 @@ void setIO(string s) {
 }
 
 struct Number {
-	ll val, id;
+	int val, id;
 };
 
 bool cmp(Number a, Number b){
@@ -148,28 +128,36 @@ bool cmp(Number a, Number b){
 	}
 	return a.val < b.val;
 }
+
 int main() {
 	ll n, x;
 	cin >> n >> x;
+	
 	vector<Number> arr(n);
 	for(int i = 0; i < n; i++){
 		cin >> arr[i].val;
 		arr[i].id = i;
 	}
 	sort(all(arr), cmp);
+	
 	int l = 0, r = n - 1;
+	unordered_map<int, Number> m;
+	
 	while(l != r){
 		ll cur = arr[l].val + arr[r].val;
-		if(cur < x){
-			l++;
-		}
-		else if(cur > x){
-			r--;
-		}
-		else{
-			deb(arr[l].id + 1, arr[r].id + 1);
+		cout << cur << nn;
+		if(m[x - cur].val + arr[l].val + arr[r].val == x){
+			deb(m[x - cur].id + 1, arr[l].id + 1, arr[r].id + 1);
 			return 0;
 		}
+		else if(x < cur){
+			r--;
+		}
+		else if(x > cur){
+			l++;
+		}
+		m[arr[l].val] = arr[l];
+		m[arr[r].val] = arr[r];
 	}
 	deb("IMPOSSIBLE");
     return 0;

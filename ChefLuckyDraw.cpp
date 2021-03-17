@@ -1,25 +1,5 @@
 /// Containers Start 
-#include <iostream> 
-#include <string> 
-#include <set> 
-#include <map> 
-#include <stack> 
-#include <queue> 
-#include <vector> 
-#include <utility> 
-#include <iomanip> 
-#include <sstream> 
-#include <bitset> 
-#include <cstdlib> 
-#include <iterator> 
-#include <algorithm> 
-/// C Header Files 
-#include <cstdio> 
-#include <cctype> 
-#include <cmath> 
-#include <math.h> 
-#include <ctime> 
-#include <cstring> 
+#include <bits/stdc++.h>
 /// Containers End 
  
  
@@ -138,39 +118,38 @@ void setIO(string s) {
   freopen((s + ".out").c_str(), "w", stdout);
 }
 
-struct Number {
-	ll val, id;
-};
 
-bool cmp(Number a, Number b){
-	if(a.val == b.val){
-		return a.id < b.id;
+bool sameAscii(string a, string b){
+	int aSum = 0, bSum = 0;
+	for(int i = 0; i < a.length(); i++){
+		aSum += (int)(a[i]);
 	}
-	return a.val < b.val;
+	for(int i = 0; i < b.length(); i++){
+		bSum += (int)(b[i]);
+	}
+	return aSum == bSum;
+}
+	
+bool diff(string a, string b, int k){
+	int ans = 0;
+	for(int i = 0; i < a.length(); i++){
+		ans = max(ans, abs((int)(a[i]) - (int)(b[i])));
+	}
+	return ans <= k;
 }
 int main() {
-	ll n, x;
-	cin >> n >> x;
-	vector<Number> arr(n);
-	for(int i = 0; i < n; i++){
-		cin >> arr[i].val;
-		arr[i].id = i;
+	int tc; sf1(tc);
+	
+	for(int i = 0; i < tc; i++){
+		string s1, s2;
+		int k;
+		cin >> s1 >> s2;
+		sf1(k);
+		
+		bool a = sameAscii(s1, s2);
+		bool b = diff(s1, s2, k);
+		if(a && b) deb("WIN");
+		else deb("LOSE");
 	}
-	sort(all(arr), cmp);
-	int l = 0, r = n - 1;
-	while(l != r){
-		ll cur = arr[l].val + arr[r].val;
-		if(cur < x){
-			l++;
-		}
-		else if(cur > x){
-			r--;
-		}
-		else{
-			deb(arr[l].id + 1, arr[r].id + 1);
-			return 0;
-		}
-	}
-	deb("IMPOSSIBLE");
     return 0;
 }

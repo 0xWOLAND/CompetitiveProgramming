@@ -1,25 +1,5 @@
 /// Containers Start 
-#include <iostream> 
-#include <string> 
-#include <set> 
-#include <map> 
-#include <stack> 
-#include <queue> 
-#include <vector> 
-#include <utility> 
-#include <iomanip> 
-#include <sstream> 
-#include <bitset> 
-#include <cstdlib> 
-#include <iterator> 
-#include <algorithm> 
-/// C Header Files 
-#include <cstdio> 
-#include <cctype> 
-#include <cmath> 
-#include <math.h> 
-#include <ctime> 
-#include <cstring> 
+#include <bits/stdc++.h>
 /// Containers End 
  
  
@@ -138,39 +118,21 @@ void setIO(string s) {
   freopen((s + ".out").c_str(), "w", stdout);
 }
 
-struct Number {
-	ll val, id;
-};
 
-bool cmp(Number a, Number b){
-	if(a.val == b.val){
-		return a.id < b.id;
-	}
-	return a.val < b.val;
-}
 int main() {
-	ll n, x;
-	cin >> n >> x;
-	vector<Number> arr(n);
-	for(int i = 0; i < n; i++){
-		cin >> arr[i].val;
-		arr[i].id = i;
-	}
-	sort(all(arr), cmp);
-	int l = 0, r = n - 1;
-	while(l != r){
-		ll cur = arr[l].val + arr[r].val;
-		if(cur < x){
-			l++;
-		}
-		else if(cur > x){
-			r--;
-		}
-		else{
-			deb(arr[l].id + 1, arr[r].id + 1);
-			return 0;
+	int n, q;
+	sf2(n, q);
+	vi arr(n);
+	for(int i = 0; i < n; i++) sf1(arr[i]);
+	for(int i = n - 1; i > 0; i--) arr[i] -= arr[i - 1];
+	
+	for(int i = 0; i < q; i++){
+		int l, r, u;
+		sf3(l, r, u);
+		for(int j = l; j < r; j++){
+			arr[j] -= u;
 		}
 	}
-	deb("IMPOSSIBLE");
+	for(int i = 0; i < n; i++) deb(arr[i]);
     return 0;
 }
