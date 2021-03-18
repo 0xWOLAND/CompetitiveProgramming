@@ -120,31 +120,27 @@ void setIO(string s) {
 
 
 int main() {
-	int n, x;
-	sf2(n, x);
+	setIO("pairup");
+	int n;
+	sf1(n);
 	vii arr(n);
-	for(int i = 0; i < n; i++){
-		cin >> arr[i].ff;
-		arr[i].ss = i;
-	}
+	for(int i = 0; i < n; i++) sf2(arr[i].ss, arr[i].ff);
 	sort(all(arr));
-	for(int i = 0; i < n; i++){
-		int l = 0, r = n - 1;
-		while(l != r){
-			int cur = arr[l].ff + arr[i].ff + arr[r].ff;
-			if(cur == x && l != r && r != i && l != i){
-				printf("%d %d %d\n", 1 + arr[l].ss, 1 + arr[i].ss, 1 + arr[r].ss);
-				return 0;
-			}
-			else if(cur < x){
-				l++;
-			}
-			else{
-				r--;
-			}
-		}
+	int ans = 0;
+	int l = 0, r = n - 1;
+	int k = 0;
+	while(l <= r){
+		// if(arr[l].ss > 0 && arr[r].ss > 0){
+			k = min(arr[l].ss, arr[r].ss);
+		// }
+		ans = max(ans, arr[l].ff + arr[r].ff);
+		if(l == r) k /= 2;
+		arr[l].ss -= k;
+		arr[r].ss -= k;
+		if(arr[l].ss == 0) l++;
+		if(arr[r].ss == 0) r--;
 	}
-	deb("IMPOSSIBLE");
-				
+	deb(ans);
+		
     return 0;
 }
