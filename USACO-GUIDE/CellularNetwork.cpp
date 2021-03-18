@@ -113,14 +113,45 @@ typedef  vector< pii >           vii;
 #define sf4ll(a,b,c, d)       scanf("%I64d %I64d %I64d %I64d", &a, &b, &c, &d) 
  
 void setIO(string s) {
-  ios_base::sync_with_stdio(0); cin.tie(0); 
   freopen((s + ".in").c_str(), "r", stdin);
   freopen((s + ".out").c_str(), "w", stdout);
 }
 
+void solve() {
+	int n, m;
+	sf2(n, m);
+	vi arr(n);
+	set<int> s;
+	for(int i = 0; i < n; i++) cin >> arr[i];
+	for(int i = 0; i < m; i++){
+		int u; cin >> u;
+		s.insert(u);
+	}
+	int ans = 1e9;
+	int r = 0;
+	for(int i = 0; i < n; i++){
+		auto tow = s.lower_bound(arr[i]);
+		if(tow != s.end()){
+			ans = *tow - arr[i];
+		}
+		deb(ans);
+		if(tow != s.begin()){
+			tow--;
+			ans = min(ans, arr[i] - *tow);
+		}
+		deb(ans);
+		r = max(r, ans);
+	}
+	deb(r);
+	
+
+}
 
 int main() {
-	int i = 0, j = 0;
-	cs
+    int tc = 1;
+    // cin >> tc;
+    for(int i = 1; i <= tc; i++){
+        solve(); 
+    }
     return 0;
 }

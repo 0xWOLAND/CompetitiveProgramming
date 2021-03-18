@@ -120,6 +120,30 @@ void setIO(string s) {
 
 
 int main() {
-
+	int n, t; 
+	sf2(n, t);
+	vi arr(n);
+	for(int i = 0; i < n; i++) cin >> arr[i];
+	int time = arr[0];
+	int right = 0, left = 0, ans = 0;
+	int books = 1;
+	
+	while(right < n){		
+		if(time <= t){
+			books++;
+			right++;
+			time += arr[right];
+		}
+		else{
+			books--;
+			ans = max(ans, books);
+			time -= arr[left];
+			left++;
+		}
+	}
+	ans = max(ans, books - 1);
+	deb(ans);
+			
+			
     return 0;
 }
