@@ -117,32 +117,49 @@ void setIO(string s) {
   freopen((s + ".out").c_str(), "w", stdout);
 }
 
-struct P{
-	int x, y, r;	
+struct Point{
+	int x, y, r;
 };
 
-bool cmp(P a, P b){
-	return ((a.x - a.r <= b.x && b.x <= a.x + a.r) && (a.y - a.r <= b.y && b.y <= a.y + a.r));
+vi adj[SIZE];
+
+
+int dfs(int src, vb vis){
+	if(vis[src]){
+		return 0;
+	}
+	int ans = 1;
+	vis[src] = 1;
+	
+	for(auto i: adj[src]){
+		ans += dfs(i, vis);
+	}
+	
+	return ans;
 }
 
 void solve() {
-	int n; cin >> n;
-	vector<P> points(n);
+	int n;
+	cin >> n;
+	vector<Point> v;
+	for(int i = 0; i < n; i++){
+		int a,b,c;
+		sf3(a,b,c);
+		v.pb({a,b,c});
+	}
 	
 	for(int i = 0; i < n; i++){
-		int u, v, w;
-		sf3(u, v, w);
-		points[i] = {u, v, w};
-	}
-	int ans = 0;
-	for(int i = 0; i < n; i++){
-		int tmp = 0;
 		for(int j = 0; j < n; j++){
-			if(cmp(points[i], points[j])){
-				tmp++;
+			if((v[i].x - v[j].x) * (v[i].x - v[j].x) + (v[i].y - v[j].y) * (v[i].y - v[j].y) <= v[i].r * v[i].r){
+				adj[i].pb(j);
 			}
 		}
-		ans = max(ans, tmp);
+	}
+		
+	int ans = 1;
+	for(int i = 0; i < n; i++){
+		vb vis(n, 0);
+		ans = max(ans, dfs(i, vis));
 	}
 	deb(ans);
 }
