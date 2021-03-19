@@ -125,39 +125,33 @@ bool cmp(pii a, pii b){
 }
 
 void solve() {
-	ull C, N;
-	cin >> C >> N;
-	ull time[C];
-	vector<pair<ull, ull>> cows(N);
-	for(int i = 0; i < C; i++) cin >> time[i];
-	
-	for(int i = 0; i < N; i++){
-		cin >>cows[i].ff >> cows[i].ss;
+	int c, n; 
+	cin >> c >> n;
+	vii cows(n);
+	multiset<int> chickens;
+	for(int i = 0; i < c; i++){
+		int u; sf1(u);
+		chickens.insert(u);
 	}
-	sort(all(cows));
-	sort(time, time + N );
-	ull ans = 0;
-	ull t = 0; 
-	for(int i = 0; i < N; i++){
-		ull u = cows[i].ff;
-		ull v = cows[i].ss;
-		while(time[t] < u){
-			t++;
-		}
-		if(time[t] > v){
+	for(int i = 0; i < n; i++){
+		sf2(cows[i].ff, cows[i].ss);
+	}
+	sort(all(cows), cmp);
+	int ans = 0;
+	
+	for(int i = 0; i < n; i++){
+		auto it = chickens.lower_bound(cows[i].ff);
+		if(cows[i].ss < (int)(*it) || it == chickens.end()){
 			continue;
 		}
-		else if(u <= time[t] && time[t] <= v){
-			ans++;
-			t++;
-		}
+		ans++;
+		chickens.erase(it);
 	}
-	cout << ans << "\n";
-
+	deb(ans);
 }
 
 int main() {
-	// setIO("helpcross");
+	setIO("helpcross");
     int tc = 1;
     // cin >> tc;
     for(int i = 1; i <= tc; i++){
