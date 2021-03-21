@@ -1,0 +1,168 @@
+[INFO  - 2021-03-21T15:47:44.947Z] GhostDriver - Main - running on port 56891
+[INFO  - 2021-03-21T15:47:45.842Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2021-03-21T15:47:45.842Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - page.customHeaders:  - {}
+[INFO  - 2021-03-21T15:47:45.842Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2021-03-21T15:47:45.843Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: c7c8c4e0-8a5c-11eb-b939-119c7e89ceed
+[ERROR - 2021-03-21T15:47:49.560Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - page.onError - msg: ReferenceError: Can't find variable: Codeforces
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-03-21T15:47:49.560Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - page.onError - stack:
+  global code (https://codeforces.com/contests/1483,1484:185)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-03-21T15:47:49.770Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - page.onError - msg: ReferenceError: Can't find variable: Codeforces
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-03-21T15:47:49.770Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - page.onError - stack:
+  (anonymous function) (https://codeforces.com/contests/1483,1484:264)
+  fire (https://sta.codeforces.com/s/15479/js/jquery-1.8.3.js:974)
+  fireWith (https://sta.codeforces.com/s/15479/js/jquery-1.8.3.js:1084)
+  ready (https://sta.codeforces.com/s/15479/js/jquery-1.8.3.js:406)
+  DOMContentLoaded (https://sta.codeforces.com/s/15479/js/jquery-1.8.3.js:83)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-03-21T15:47:50.057Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - page.onError - msg: ReferenceError: Can't find variable: Codeforces
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-03-21T15:47:50.057Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - page.onError - stack:
+  (anonymous function) (undefined:6)
+  execute (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  cb (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  Execute (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  ExecuteHooks (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  execute (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  cb (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  Execute (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  Post (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  execute (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  cb (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  Process (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  call (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  WAITEXECUTE (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  cb (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  Process (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  call (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  WAITEXECUTE (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  cb (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  Process (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  call (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  WAITEXECUTE (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  cb (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  Process (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  call (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  WAITEXECUTE (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  cb (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-03-21T15:47:50.891Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - page.onError - msg: ReferenceError: Can't find variable: Codeforces
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-03-21T15:47:50.891Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - page.onError - stack:
+  global code (https://codeforces.com/enter?back=%2Fcontests%2F1483%2C1484:185)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-03-21T15:47:51.092Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - page.onError - msg: ReferenceError: Can't find variable: Codeforces
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-03-21T15:47:51.092Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - page.onError - stack:
+  (anonymous function) (https://codeforces.com/enter?back=%2Fcontests%2F1483%2C1484:264)
+  fire (https://sta.codeforces.com/s/15479/js/jquery-1.8.3.js:974)
+  fireWith (https://sta.codeforces.com/s/15479/js/jquery-1.8.3.js:1084)
+  ready (https://sta.codeforces.com/s/15479/js/jquery-1.8.3.js:406)
+  DOMContentLoaded (https://sta.codeforces.com/s/15479/js/jquery-1.8.3.js:83)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-03-21T15:47:51.301Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - page.onError - msg: ReferenceError: Can't find variable: Codeforces
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-03-21T15:47:51.301Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - page.onError - stack:
+  (anonymous function) (undefined:6)
+  execute (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  cb (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  Execute (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  ExecuteHooks (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  execute (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  cb (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  Execute (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  Post (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  execute (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  cb (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  Process (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  call (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  WAITEXECUTE (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  cb (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  Process (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  call (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  WAITEXECUTE (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  cb (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  Process (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  call (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  WAITEXECUTE (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  cb (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  Process (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  call (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  WAITEXECUTE (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  cb (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-03-21T15:47:55.014Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - page.onError - msg: ReferenceError: Can't find variable: Codeforces
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-03-21T15:47:55.015Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - page.onError - stack:
+  global code (https://codeforces.com/contests/1483,1484:185)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-03-21T15:47:55.033Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - page.onError - msg: ReferenceError: Can't find variable: Codeforces
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-03-21T15:47:55.033Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - page.onError - stack:
+  (anonymous function) (https://codeforces.com/contests/1483,1484:264)
+  fire (https://sta.codeforces.com/s/15479/js/jquery-1.8.3.js:974)
+  fireWith (https://sta.codeforces.com/s/15479/js/jquery-1.8.3.js:1084)
+  ready (https://sta.codeforces.com/s/15479/js/jquery-1.8.3.js:406)
+  DOMContentLoaded (https://sta.codeforces.com/s/15479/js/jquery-1.8.3.js:83)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-03-21T15:47:55.296Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - page.onError - msg: ReferenceError: Can't find variable: Codeforces
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-03-21T15:47:55.296Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - page.onError - stack:
+  (anonymous function) (undefined:6)
+  execute (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  cb (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  Execute (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  ExecuteHooks (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  execute (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  cb (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  Execute (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  Post (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  execute (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  cb (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  Process (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  call (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  WAITEXECUTE (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  cb (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  Process (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  call (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  WAITEXECUTE (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  cb (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  Process (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  call (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  WAITEXECUTE (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  cb (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  Process (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  call (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  WAITEXECUTE (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+  cb (https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full:19)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-03-21T15:47:57.571Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1616341677554
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-03-21T15:48:00.020Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - page.onError - msg: ReferenceError: Can't find variable: Codeforces
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-03-21T15:48:00.020Z] Session [c7c8c4e0-8a5c-11eb-b939-119c7e89ceed] - page.onError - stack:
+  (anonymous function) (https://codeforces.com/contests/1483,1484:501)
+
+  phantomjs://platform/console++.js:263 in error
