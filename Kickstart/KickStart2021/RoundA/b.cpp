@@ -118,28 +118,58 @@ void setIO(string s) {
 }
 
 void solve() {
-	int n, k;
-	sf2(n, k);
-	string s;
-	cin >> s;
+	int r, c;
+	sf2(r,c);
 	
-	int cur = 0;
-	for(int i = 0; i < n / 2; i++){
-		if(s[i] != s[n - i - 1]){
-			cur++;
+	vector<vector<int>> up(r, vector<int>(c));
+	vector<vector<int>> left(r, vector<int>(c));
+
+	for(int i = 0; i < r; i++){
+		for(int j = 0; j < c; j++){
+			cin >> up[i][j];
+			left[i][j] = up[i][j];
+			if(j && up[i][j]){
+				up[i][j] += up[i][j - 1];
+			}
+			if(i && left[i][j]){
+				left[i][j] += left[i - 1][j];
+			}
 		}
 	}
 	
-	int need = max(k - cur, k + cur - n);
+	// for(int i = 0; i < r; i++){
+		// for(int j = 0; j < c; j++){
+			// printf("%2d ", up[i][j]);
+		// }
+		// cout << nn;
+	// }
+	// cout << nn;
+	// for(int i = 0; i < r; i++){
+		// for(int j = 0; j < c; j++){
+			// printf("%2d ", left[i][j]);
+		// }
+		// cout << nn;
+	// }
+	// cout << nn;
+	int ans = 0;
 	
-	deb(need);
+	for(int i = 0; i < r; i++){
+		for(int j = 0; j < c; j++){
+			ans += min(left[i], up[j] / 2) - 1;
+		}
+	}
+	
+	
+	deb(ans);
+
+
 }
 
 int main() {
     int tc = 1;
     cin >> tc;
     for(int i = 1; i <= tc; i++){
-		printf("Case #%d: ", i);
+		// printf("Case #%d: ", i);
         solve(); 
     }
     return 0;
