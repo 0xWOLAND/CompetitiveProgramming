@@ -8,10 +8,29 @@
 	"buffers":
 	[
 		{
-			"file": "/home/bhargav/Desktop/dev/CP/Codeforces/BuyingTorches/a.cpp",
+			"file": "/home/bhargav/Desktop/dev/CP/Codeforces/CellularNetwork/a.cpp",
 			"settings":
 			{
-				"buffer_size": 3572,
+				"buffer_size": 4620,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\n3 2\n-2 2 4\n-3 0\n\n4\n\n5 3\n1 5 10 14 17\n4 11 15\n\n3\n\n1 1\n-1000000000\n1000000000\n\n2000000000\n\n",
+			"settings":
+			{
+				"buffer_size": 90,
+				"line_ending": "Unix",
+				"name": "a.cpp -run",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "/home/bhargav/Desktop/dev/CP/USACO-GUIDE/DiamondCollector/a.cpp",
+			"settings":
+			{
+				"buffer_size": 3713,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -61,6 +80,10 @@
 		"selected_items":
 		[
 			[
+				"fastoly",
+				"FastOlympicCoding: Make Stress"
+			],
+			[
 				"remove",
 				"Package Control: Remove Package"
 			],
@@ -105,12 +128,23 @@
 	},
 	"file_history":
 	[
+		"/home/bhargav/Desktop/dev/CP/Codeforces/MagicShip/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/DarrenYaoBook/CowDanceShow/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/DarrenYaoBook/Convention/convention.out",
+		"/home/bhargav/Desktop/dev/CP/DarrenYaoBook/Convention/convention.in",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/ArrayCancelation/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/BoboniuLikesToColorBalls/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/DarrenYaoBook/Convention/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/DarrenYaoBook/AngryCows/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/darwin.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/Boboniu/LikesToColorBalls.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/FairNumbers/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/BuyingTorches/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/BallsOfSteel/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/RegularBracketSequence/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/CSES/NumberSpiral.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/RedAndBlue/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/String_LCM/a.cpp",
-		"/home/bhargav/Desktop/dev/CP/darwin.cpp",
 		"/home/bhargav/Desktop/dev/CP/DarrenYaoBook/Moocast/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/AddAndDivide/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/BalancedRemainders/a.cpp",
@@ -128,7 +162,7 @@
 	],
 	"find":
 	{
-		"height": 42.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -142,6 +176,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"cin",
+			"cout",
+			"cin",
 			"sz",
 			"INF",
 			"sz",
@@ -157,6 +194,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"fin",
+			"fout",
+			"fin",
 			"in"
 		],
 		"reverse": false,
@@ -168,24 +208,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/home/bhargav/Desktop/dev/CP/Codeforces/BuyingTorches/a.cpp",
+					"file": "/home/bhargav/Desktop/dev/CP/Codeforces/CellularNetwork/a.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3572,
+						"buffer_size": 4620,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2093,
-								2093
+								4076,
+								4076
 							]
 						],
 						"settings":
@@ -195,7 +235,69 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1140.0,
+						"translation.y": 1653.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 90,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								90,
+								90
+							]
+						],
+						"settings":
+						{
+							"delete_forb": true,
+							"edit_mode": false,
+							"fold_buttons": false,
+							"line_numbers": false,
+							"syntax": "Packages/CppFastOlympicCoding/TestSyntax.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 18.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/bhargav/Desktop/dev/CP/USACO-GUIDE/DiamondCollector/a.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3713,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2511,
+								2511
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1368.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -206,11 +308,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 29.0
+		"height": 28.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 43.0
 	},
 	"layout":
 	{
@@ -247,7 +349,7 @@
 	"project": "Debug.sublime-project",
 	"replace":
 	{
-		"height": 54.0
+		"height": 73.0
 	},
 	"save_all_on_build": true,
 	"select_file":
