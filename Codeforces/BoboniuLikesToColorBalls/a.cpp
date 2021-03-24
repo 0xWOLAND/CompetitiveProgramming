@@ -93,21 +93,50 @@ template<typename T,typename T1>T amin(T &a,T1 b){if(b<a)a=b;return a;}
 const long long INF=1e18;
 const int32_t M=1e9+7;
 const int32_t MM=998244353;
-void setIO(string s) {
-  freopen((s + ".in").c_str(), "r", stdin);
-  freopen((s + ".out").c_str(), "w", stdout);
+
+bool ok(int r, int g, int b, int w){
+    while(r != 0 && g != 0 && b != 0){
+        // printf("%d %d %d %d\n", r,g,b,w);
+        if(r % 2 == 1 && g % 2 == 0 && b % 2 == 0 && w % 2 == 0) return true;
+        if(r % 2 == 0 && g % 2 == 1 && b % 2 == 0 && w % 2 == 0) return true;
+        if(r % 2 == 0 && g % 2 == 0 && b % 2 == 1 && w % 2 == 0) return true;
+        if(r % 2 == 0 && g % 2 == 0 && b % 2 == 0 && w % 2 == 1) return true;
+        if(r % 2 == 0 && g % 2 == 0 && b % 2 == 0 && w % 2 == 0) return true;
+        r--;
+        g--;
+        b--;
+        w += 3;
+    }
+     if(r % 2 == 1 && g % 2 == 0 && b % 2 == 0 && w % 2 == 0) return true;
+    if(r % 2 == 0 && g % 2 == 1 && b % 2 == 0 && w % 2 == 0) return true;
+    if(r % 2 == 0 && g % 2 == 0 && b % 2 == 1 && w % 2 == 0) return true;
+    if(r % 2 == 0 && g % 2 == 0 && b % 2 == 0 && w % 2 == 1) return true;
+    if(r % 2 == 0 && g % 2 == 0 && b % 2 == 0 && w % 2 == 0) return true;
+    return false;
 }
 
 void solve(){
+    int r,g,b,w;
+    cin >> r >> g >> b >> w;
+    if(r == 0 && g == 0 && b == 0 && w == 0){
+        deb("Yes");
+        return;
+    }
+    if(ok(r,g,b,w)){
+        deb("Yes");
+    }
+    else{
+        deb("No");
+    }
 
 
 }
 signed main(){
     ios_base::sync_with_stdio(false);
     cin.tie(0);cout.tie(0);
-    // setIO();
+   
     int t=1;
-    //cin>>t;
+    cin>>t;
     while(t--) solve();
     return 0;
 }

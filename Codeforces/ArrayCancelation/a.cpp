@@ -93,21 +93,36 @@ template<typename T,typename T1>T amin(T &a,T1 b){if(b<a)a=b;return a;}
 const long long INF=1e18;
 const int32_t M=1e9+7;
 const int32_t MM=998244353;
-void setIO(string s) {
-  freopen((s + ".in").c_str(), "r", stdin);
-  freopen((s + ".out").c_str(), "w", stdout);
-}
+
 
 void solve(){
-
+    int n; cin >> n;
+    vll v(n);
+    for(int i = 0; i < n; i++) cin >> v[i];
+    ll tot = 0; 
+    for(int i = 0; i < n; i++){
+        if(v[i] > 0){
+            tot += v[i];
+        }
+        else if(v[i] < 0){
+            int k = min(abs(v[i]), tot);;
+            v[i] += k;
+            tot -= k;
+        }
+    }
+    ll ans = 0;
+    for(int i = 0; i < n; i++){
+        if(v[i] < 0) ans += abs(v[i]);
+    }
+    deb(ans);
 
 }
 signed main(){
     ios_base::sync_with_stdio(false);
     cin.tie(0);cout.tie(0);
-    // setIO();
+   
     int t=1;
-    //cin>>t;
+    cin>>t;
     while(t--) solve();
     return 0;
 }

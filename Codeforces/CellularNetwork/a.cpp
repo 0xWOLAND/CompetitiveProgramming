@@ -97,9 +97,43 @@ void setIO(string s) {
   freopen((s + ".in").c_str(), "r", stdin);
   freopen((s + ".out").c_str(), "w", stdout);
 }
+#define int ll
+int n, m;
+
+bool ok(vi cities, vi towers, int r){
+  
+    for(int i = 0; i < n; i++){
+        int city = cities[i];
+        auto itr = lower_bound(all(towers), city);
+        auto high = itr;
+        int low = distance(towers.begin(), high) - 1;
+        if(high == towers.end() && abs(city - towers[low]) > r) return false;
+        else if(low == -1 && abs(city - *high) > r) return false;
+        else if(abs(city - *high) > r && abs(city - towers[low]) > r) return false;
+    }
+    return true;
+}
 
 void solve(){
+    cin >> n >> m;
+    vi cities(n), towers(m);
 
+    for(int i = 0; i < n; i++) cin >> cities[i];
+    for(int i = 0; i < m; i++) cin >> towers[i];
+    sort(all(cities));
+    sort(all(towers));
+
+    int low = 0, high = 1e18;
+    while(low < high){
+        int mid = (low + high) / 2;
+        if(ok(cities, towers, mid)){
+            high = mid;
+        }
+        else{
+            low = mid + 1;
+        }
+    }
+    deb(low);
 
 }
 signed main(){

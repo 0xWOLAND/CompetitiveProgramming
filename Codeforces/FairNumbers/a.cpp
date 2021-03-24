@@ -93,21 +93,38 @@ template<typename T,typename T1>T amin(T &a,T1 b){if(b<a)a=b;return a;}
 const long long INF=1e18;
 const int32_t M=1e9+7;
 const int32_t MM=998244353;
-void setIO(string s) {
-  freopen((s + ".in").c_str(), "r", stdin);
-  freopen((s + ".out").c_str(), "w", stdout);
+#define int ull
+
+bool ok(int n){
+    int tmp = n;
+    while(n > 0){
+        int k = n % 10;
+        if(k == 0){
+            n /= 10;
+            continue;
+        }
+        if(tmp % k != 0){
+            return false;
+        }
+        n /= 10;
+    }
+    return true;
 }
 
 void solve(){
-
+    int n; cin >> n;
+    while(!ok(n)){
+        n++;
+    }    
+    deb(n);
 
 }
 signed main(){
     ios_base::sync_with_stdio(false);
     cin.tie(0);cout.tie(0);
-    // setIO();
+   
     int t=1;
-    //cin>>t;
+    cin>>t;
     while(t--) solve();
     return 0;
 }

@@ -90,24 +90,51 @@ template<typename T1,typename T2>ostream& operator<<(ostream& out,pair<T1,T2> a)
 template<typename T,typename T1>T amax(T &a,T1 b){if(b>a)a=b;return a;}
 template<typename T,typename T1>T amin(T &a,T1 b){if(b<a)a=b;return a;}
 
-const long long INF=1e18;
-const int32_t M=1e9+7;
-const int32_t MM=998244353;
-void setIO(string s) {
-  freopen((s + ".in").c_str(), "r", stdin);
-  freopen((s + ".out").c_str(), "w", stdout);
-}
 
-void solve(){
+#define x first
+#define y second
 
+const int N = 100009;
 
-}
-signed main(){
-    ios_base::sync_with_stdio(false);
-    cin.tie(0);cout.tie(0);
-    // setIO();
-    int t=1;
-    //cin>>t;
-    while(t--) solve();
+pair<int, int> st, fi;
+int n;
+string s;
+
+string mv = "UDLR";
+int dx[] = {0, 0, -1, 1};
+int dy[] = {1, -1, 0, 0};
+
+pair<int, int> d[N];
+
+int main(){
+    cin >> st.x >> st.y >> fi.x >> fi.y;
+    cin >> n >> s;      
+
+    for(int i = 0; i < n; ++i){
+        int id = -1;
+        for(int j = 0; j < 4; ++j)
+            if(mv[j] == s[i])
+                id = j;
+        assert(id != -1);
+        d[i + 1] = make_pair(d[i].x + dx[id], d[i].y + dy[id]);
+    }
+
+    long long l = 0, r = 1e18;
+    while(r - l > 1){
+        long long mid = (l + r) / 2;
+        long long cnt = mid / n, rem = mid % n;
+        long long x = st.x + d[rem].x + cnt *  1LL * d[n].x;
+        long long y = st.y + d[rem].y + cnt *  1LL * d[n].y;
+        deb(x, y);
+        long long dist = abs(x - fi.x) + abs(y - fi.y);
+        if(dist <= mid)
+            r = mid;
+        else
+            l = mid;    
+    } 
+
+    if(r > 5e17) r = -1;
+    cout << r << endl;
+
     return 0;
 }
