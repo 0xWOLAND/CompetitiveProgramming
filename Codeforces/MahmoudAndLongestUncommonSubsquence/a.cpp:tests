@@ -1,0 +1,8 @@
+[
+	{
+		"test": "abcd\ndefgh\n"
+	},
+	{
+		"test": "a\na\n"
+	}
+]
