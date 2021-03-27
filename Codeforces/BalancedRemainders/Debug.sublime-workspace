@@ -8,22 +8,21 @@
 	"buffers":
 	[
 		{
-			"file": "/home/bhargav/Desktop/dev/CP/CodeJam/ReversortEngineering/a.cpp",
+			"file": "/home/bhargav/Desktop/dev/CP/Codeforces/NewPassword/a.cpp",
 			"settings":
 			{
-				"buffer_size": 4762,
+				"buffer_size": 3818,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "\n5\n4 6\n2 1\n7 12\n7 2\n2 1000\n\nCase #1: 1 3 4 2 \nCase #2: 1 2 \nCase #3: 1 2 3 5 7 6 4 \nCase #4: IMPOSSIBLE\nCase #5: IMPOSSIBLE\n\n",
+			"contents": "\n4 3\n\n3 2\n 3 2\n 23\n 2\n3\n 23\n 4r\n\nr 32 \n",
 			"settings":
 			{
-				"buffer_size": 125,
+				"buffer_size": 39,
 				"line_ending": "Unix",
 				"name": "a.cpp -run",
-				"read_only": true,
 				"scratch": true
 			}
 		}
@@ -124,13 +123,18 @@
 	},
 	"file_history":
 	[
+		"/home/bhargav/Desktop/dev/CP/Codeforces/TeamOlympiad/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/HelpfulMaths/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/FreeIceCream/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/CodeJam/ReversortEngineering/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/AAntonAndLetters/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/WayTooLongWords/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/PartialReplacement/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/ShaasAndOskols/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/CarrotCakes/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/StrangeTable/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/CodeJam/Reversort/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/CodeJam/MoonsAndUmbrellas/a.cpp",
-		"/home/bhargav/Desktop/dev/CP/CodeJam/ReversortEngineering/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/CodeJam/Reversort/a__Good.cpp",
 		"/home/bhargav/Desktop/dev/CP/CodeJam/Reversort/a__Generator.cpp.cpp",
 		"/home/bhargav/Desktop/dev/CP/CodeJam/Reversort/a__Generator.cpp",
@@ -175,7 +179,7 @@
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
@@ -189,6 +193,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"get",
 			"cin",
 			"cout",
 			"cin",
@@ -226,19 +231,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/home/bhargav/Desktop/dev/CP/CodeJam/ReversortEngineering/a.cpp",
+					"file": "/home/bhargav/Desktop/dev/CP/Codeforces/NewPassword/a.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4762,
+						"buffer_size": 3818,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4762,
-								4762
+								3631,
+								3631
 							]
 						],
 						"settings":
@@ -248,10 +253,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1829.0,
+						"translation.y": 1216.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -265,15 +270,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 125,
+						"buffer_size": 39,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								125,
-								125
+								39,
+								39
 							]
 						],
 						"settings":
@@ -286,10 +291,10 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 14.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
