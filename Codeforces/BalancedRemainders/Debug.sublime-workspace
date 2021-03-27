@@ -8,31 +8,23 @@
 	"buffers":
 	[
 		{
-			"file": "/home/bhargav/Desktop/dev/CP/Codeforces/CellularNetwork/a.cpp",
+			"file": "/home/bhargav/Desktop/dev/CP/CodeJam/ReversortEngineering/a.cpp",
 			"settings":
 			{
-				"buffer_size": 4620,
+				"buffer_size": 4762,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "\n3 2\n-2 2 4\n-3 0\n\n4\n\n5 3\n1 5 10 14 17\n4 11 15\n\n3\n\n1 1\n-1000000000\n1000000000\n\n2000000000\n\n",
+			"contents": "\n5\n4 6\n2 1\n7 12\n7 2\n2 1000\n\nCase #1: 1 3 4 2 \nCase #2: 1 2 \nCase #3: 1 2 3 5 7 6 4 \nCase #4: IMPOSSIBLE\nCase #5: IMPOSSIBLE\n\n",
 			"settings":
 			{
-				"buffer_size": 90,
+				"buffer_size": 125,
 				"line_ending": "Unix",
 				"name": "a.cpp -run",
 				"read_only": true,
 				"scratch": true
-			}
-		},
-		{
-			"file": "/home/bhargav/Desktop/dev/CP/USACO-GUIDE/DiamondCollector/a.cpp",
-			"settings":
-			{
-				"buffer_size": 3713,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -79,6 +71,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"make st",
+				"FastOlympicCoding: Make Stress"
+			],
 			[
 				"fastoly",
 				"FastOlympicCoding: Make Stress"
@@ -128,6 +124,23 @@
 	},
 	"file_history":
 	[
+		"/home/bhargav/Desktop/dev/CP/Codeforces/PartialReplacement/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/ShaasAndOskols/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/CarrotCakes/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/StrangeTable/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/CodeJam/Reversort/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/CodeJam/MoonsAndUmbrellas/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/CodeJam/ReversortEngineering/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/CodeJam/Reversort/a__Good.cpp",
+		"/home/bhargav/Desktop/dev/CP/CodeJam/Reversort/a__Generator.cpp.cpp",
+		"/home/bhargav/Desktop/dev/CP/CodeJam/Reversort/a__Generator.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/Juicer/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/AnImpassionedCirculationOfAffection/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/USACO-GUIDE/SleepyCowHerding/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/USACO-GUIDE/DiamondCollector/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/DarrenYaoBook/LoanPayment/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/CellularNetwork/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/USACO-GUIDE/SleepyCowHerding/a",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/MagicShip/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/DarrenYaoBook/CowDanceShow/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/DarrenYaoBook/Convention/convention.out",
@@ -208,24 +221,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/home/bhargav/Desktop/dev/CP/Codeforces/CellularNetwork/a.cpp",
+					"file": "/home/bhargav/Desktop/dev/CP/CodeJam/ReversortEngineering/a.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4620,
+						"buffer_size": 4762,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4076,
-								4076
+								4762,
+								4762
 							]
 						],
 						"settings":
@@ -235,26 +248,32 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1653.0,
+						"translation.y": 1829.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
 					"buffer": 1,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 90,
+						"buffer_size": 125,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								90,
-								90
+								125,
+								125
 							]
 						],
 						"settings":
@@ -267,40 +286,10 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 18.0,
+						"translation.y": 14.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/home/bhargav/Desktop/dev/CP/USACO-GUIDE/DiamondCollector/a.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3713,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2511,
-								2511
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1368.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -323,11 +312,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.68,
 			1.0
 		],
 		"rows":
@@ -349,7 +345,7 @@
 	"project": "Debug.sublime-project",
 	"replace":
 	{
-		"height": 73.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -379,7 +375,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
