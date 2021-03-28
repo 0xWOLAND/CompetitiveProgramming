@@ -8,19 +8,19 @@
 	"buffers":
 	[
 		{
-			"file": "/home/bhargav/Desktop/dev/CP/Codeforces/OlesyaAndRodion/a.cpp",
+			"file": "/home/bhargav/Desktop/dev/CP/Codeforces/Counterexample/a.cpp",
 			"settings":
 			{
-				"buffer_size": 3968,
+				"buffer_size": 4397,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "\n",
+			"contents": "\n2 4\n\n2 3 4\n\n10 11\n\n-1\n\n900000000000000009 900000000000000029\n\n900000000000000010 900000000000000011 900000000000000012\n\n",
 			"settings":
 			{
-				"buffer_size": 1,
+				"buffer_size": 121,
 				"line_ending": "Unix",
 				"name": "a.cpp -run",
 				"read_only": true,
@@ -124,6 +124,16 @@
 	},
 	"file_history":
 	[
+		"/home/bhargav/Desktop/dev/CP/Codeforces/Counterexample/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/PanoramixsPrediction/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/CalculatingFunction/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/ArpasHardExamAndMehradsNaiveCheat/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/CalculatingFunction/a__Generator.cpp.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/ValeraAndX/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/Dubstep/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/BrainsPhotos/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/Football/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/OlesyaAndRodion/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/IsItRated/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/EvenOdds/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/IWannaBeTheGuy/a.cpp",
@@ -193,7 +203,7 @@
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 42.0
 	},
 	"find_in_files":
 	{
@@ -246,19 +256,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/home/bhargav/Desktop/dev/CP/Codeforces/OlesyaAndRodion/a.cpp",
+					"file": "/home/bhargav/Desktop/dev/CP/Codeforces/Counterexample/a.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3968,
+						"buffer_size": 4397,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3576,
-								3735
+								3544,
+								3544
 							]
 						],
 						"settings":
@@ -268,7 +278,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1140.0,
+						"translation.y": 1560.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -285,19 +295,21 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1,
+						"buffer_size": 121,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1,
-								1
+								121,
+								121
 							]
 						],
 						"settings":
 						{
+							"delete_forb": true,
+							"edit_mode": false,
 							"fold_buttons": false,
 							"line_numbers": false,
 							"syntax": "Packages/CppFastOlympicCoding/TestSyntax.tmLanguage",
@@ -315,7 +327,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 29.0
 	},
 	"input":
 	{
@@ -363,7 +375,7 @@
 	"project": "Debug.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 54.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -393,7 +405,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
