@@ -99,7 +99,10 @@ void setIO(string s) {
 }
 
 void solve(){
-
+	string s;
+	while(getline(cin, s)){
+		deb("NO");
+	}
 
 }
 signed main(){

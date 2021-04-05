@@ -97,9 +97,29 @@ void setIO(string s) {
   freopen((s + ".in").c_str(), "r", stdin);
   freopen((s + ".out").c_str(), "w", stdout);
 }
-
+#define int ll
 void solve(){
+    int n; cin >> n;
+    int ans = 2;
 
+    vii arr(n);
+    for(int i = 0; i < n; i++){
+        cin >> arr[i].fr >> arr[i].sc;
+    }
+    sort(all(arr));
+    int prev = arr[0].fr;
+    for(int i = 1; i < n - 1; i++){
+        int u = arr[i].fr, v = arr[i].sc;
+        if(u - v > prev){
+            ans++;
+            prev = u;
+        }
+        else if(u + v < arr[i + 1].fr){
+            ans++;
+            prev = u + v;
+        }
+    }
+    deb(ans);
 
 }
 signed main(){

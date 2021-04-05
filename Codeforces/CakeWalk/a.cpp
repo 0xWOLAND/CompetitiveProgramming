@@ -99,8 +99,40 @@ void setIO(string s) {
 }
 
 void solve(){
+    int n, m;
+    cin >> n >> m;
 
+    int board[n][m];
+    int ans[n][m];
+    memset(ans, 0, sizeof(ans));
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < m; j++){
+            char c; cin >> c;
+            if(c == '*') board[i][j] = 1;
+            else{
+                board[i][j] = 0;
+            }
+        }
+    }
 
+    stack< <pair<pair<int, int> , int> > q;
+    q.insert(make_pair(make_pair(0, 0), board[0][0]));
+
+    while(!q.empty()){
+        auto cur = q.top();
+        q.pop();
+        int x = cur.first.first;
+        int y = cur.first.second;
+        int k = cur.second;
+        ans[x][y] = max(ans[x][y], k);
+        if(x < n - 1){
+            q.insert(make_pair(make_pair(x + 1, y), k + board[x + 1][y]));
+        }
+        if(y < n - 1){
+            q.insert(make_pair(make_pair(x, y + 1), k + board[x][y + 1]));      
+        }
+    }
+    deb(ans[n - 1][m - 1]);
 }
 signed main(){
     ios_base::sync_with_stdio(false);

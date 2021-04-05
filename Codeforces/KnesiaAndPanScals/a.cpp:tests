@@ -1,0 +1,17 @@
+[
+	{
+		"test": "AC|T\nL\n"
+	},
+	{
+		"test": "|ABC\nXYZ\n"
+	},
+	{
+		"test": "W|T\nF\n"
+	},
+	{
+		"test": "ABC|\nD\n"
+	},
+	{
+		"test": "A|BC\nDEF\n"
+	}
+]

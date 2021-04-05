@@ -98,7 +98,48 @@ void setIO(string s) {
   freopen((s + ".out").c_str(), "w", stdout);
 }
 
+
+string flip(string s, int to){
+    for(int i = 0; i <= to; i++){
+        s[i] = (s[i] == '1' ? '0' : '1');
+    }
+    return s;
+}
+
+int flipTo(string a, string b, int n){
+    for(int i = n - 1; i >= 0; i--){
+        if(a[i] != b[i]) return i;
+    }
+    return -1;
+}
+
 void solve(){
+    int n; cin >> n;
+    string a, b;
+    cin >> a >> b;
+
+    int pref[n + 1][2];
+    pref[0][0] = pref[0][1] = 0;
+
+    for(int i = 0; i < n; i++){
+        pref[i + 1][1] = pref[i][1];
+        pref[i + 1][0] = pref[i][0];
+        
+        if(a[i] == '1'){
+            pref[i + 1][1]++;
+        }
+        else{
+            pref[i + 1][0]++;
+        }
+    }
+    int r = flipTo(a, b, n);
+    while(r != -1 && pref[r + 1][1] == pref[r + 1][0]){
+        a = flip(a, r);
+        r = flipTo(a, b, n);
+    }
+
+    if(a == b) deb("YES");
+    else deb("NO");
 
 
 }
@@ -107,7 +148,7 @@ signed main(){
     cin.tie(0);cout.tie(0);
     // setIO();
     int t=1;
-    //cin>>t;
+    cin>>t;
     while(t--) solve();
     return 0;
 }

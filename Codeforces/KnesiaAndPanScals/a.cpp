@@ -99,7 +99,34 @@ void setIO(string s) {
 }
 
 void solve(){
+	string a, b;
+	string s;
+	cin >> s;
+	bool passed = false;
+	for(int i = 0; i < s.length(); i++){
+		if(s[i] == '|') passed = 1;
+		else if(!passed) a.push_back(s[i]);
+		else b.push_back(s[i]);
+	}
 
+	string next;
+	cin >> next;
+	while(next.length() > 0){
+		char c = next[next.length() - 1];
+		next.pop_back();
+		if(a.length() < b.length()){
+			a += c;
+		}
+		else{
+			b += c;
+		}
+	}
+	if(a.length() != b.length()){
+		deb("Impossible");
+	}
+	else{
+		printf("%s|%s\n", a.c_str(), b.c_str());
+	}
 
 }
 signed main(){

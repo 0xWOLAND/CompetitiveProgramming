@@ -98,8 +98,33 @@ void setIO(string s) {
   freopen((s + ".out").c_str(), "w", stdout);
 }
 
-void solve(){
+bool cannotSolve(string s){
+	char prev = s[0];
+	if(prev != 'a') return false;
+	for(int i = 1; i < s.length(); i++){
+		if(s[i] != prev){
+			return false;
+		}
+	}
+	return true;
+}
 
+void solve(){
+	string s; cin >> s;
+	if(cannotSolve(s)){
+		deb("NO");
+	}
+	else{
+		int numFront = 0, numBack = 0;
+		int i = 0;
+		deb("YES");
+		while(s[numFront] == 'a') numFront++;
+		while(s[s.length() - 1 - numBack] == 'a') numBack++;
+
+		if(numFront > numBack) deb("a" + s);
+		else deb(s + "a");
+
+	}
 
 }
 signed main(){
@@ -107,7 +132,7 @@ signed main(){
     cin.tie(0);cout.tie(0);
     // setIO();
     int t=1;
-    //cin>>t;
+    cin>>t;
     while(t--) solve();
     return 0;
 }

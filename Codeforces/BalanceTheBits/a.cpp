@@ -99,7 +99,55 @@ void setIO(string s) {
 }
 
 void solve(){
+    int n; cin >> n;
+    int a = 0, b = 0;
+    string a_str = "", b_str = "";
+    string s; cin >> s;
 
+    for(int i = 0; i < n; i++){
+        char c = s[i];
+
+        if(c == '1'){
+            if(a - 1 < 0 || b - 1 < 0){
+                a_str += "(";
+                b_str += "(";
+                a++;
+                b++;
+            }
+            else{
+                a_str += ")";
+                b_str += ")";
+                a--;
+                b--;
+            }
+        }
+        else{
+            if(a == 0 && b == 0){
+                deb("NO");
+                return;
+            }
+            else if(a > b){
+                a--;
+                b++;
+                a_str += ")";
+                b_str += "(";
+            }
+            else{
+                b--;
+                a++;
+                b_str += ")";
+                a_str += "(";
+            }
+        }
+    }
+    if(a == 0 && b == 0){
+        deb("YES");
+        deb(a_str);
+        deb(b_str);
+    }
+    else{
+        deb("NO");
+    }
 
 }
 signed main(){
@@ -107,7 +155,7 @@ signed main(){
     cin.tie(0);cout.tie(0);
     // setIO();
     int t=1;
-    //cin>>t;
+    cin>>t;
     while(t--) solve();
     return 0;
 }
