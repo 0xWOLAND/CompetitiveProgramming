@@ -97,10 +97,22 @@ void setIO(string s) {
   freopen((s + ".in").c_str(), "r", stdin);
   freopen((s + ".out").c_str(), "w", stdout);
 }
-
+#define int ull
 void solve(){
-
-
+    int n; cin >> n;
+    vi v(n + 1);
+    for(int i = 0; i < n; i++){
+        int u; cin >> u;
+        v[u] = i + 1;
+    }
+    int m; cin >> m;
+    int a = 0, b = 0;
+    for(int T = 0; T < m; T++){
+        int k; cin >> k;
+        a += v[k];
+        b += (n - v[k] + 1);
+    }
+    deb(a,b);
 }
 signed main(){
     ios_base::sync_with_stdio(false);
