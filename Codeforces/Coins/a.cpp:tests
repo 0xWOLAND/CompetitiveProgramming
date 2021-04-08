@@ -1,0 +1,8 @@
+[
+	{
+		"test": "A>B\nC<B\nA>C\n"
+	},
+	{
+		"test": "A<B\nB>C\nC>A\n"
+	}
+]
