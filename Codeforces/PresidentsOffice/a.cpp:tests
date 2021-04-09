@@ -1,0 +1,8 @@
+[
+	{
+		"test": "3 4 R\nG.B.\n.RR.\nTTT.\n"
+	},
+	{
+		"test": "3 3 Z\n...\n.H.\n..Z\n"
+	}
+]
