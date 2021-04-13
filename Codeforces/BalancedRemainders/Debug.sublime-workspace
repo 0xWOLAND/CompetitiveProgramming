@@ -28,30 +28,31 @@
 	"buffers":
 	[
 		{
-			"file": "/home/bhargav/Desktop/dev/CP/Codeforces/GCD_Length/test.cpp",
+			"file": "/home/bhargav/Desktop/dev/CP/Codeforces/KingsPath/a.cpp",
 			"settings":
 			{
-				"buffer_size": 4873,
+				"buffer_size": 1928,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/bhargav/Desktop/dev/CP/Codeforces/MahmoudAndATriangle/a.cpp",
+			"file": "/home/bhargav/Desktop/dev/CP/Codeforces/StudentsAndShoelaces/a.cpp",
 			"settings":
 			{
-				"buffer_size": 4047,
+				"buffer_size": 523,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "\n",
+			"contents": "\n3 3\n1 2\n2 3\n3 1\n\n0\n\n6 3\n1 2\n2 3\n3 4\n\n2\n\n6 5\n1 4\n2 4\n3 4\n5 4\n6 4\n\n1\n\n",
 			"settings":
 			{
-				"buffer_size": 1,
+				"buffer_size": 69,
 				"line_ending": "Unix",
-				"name": "a_Good.cpp -run",
+				"name": "a.cpp -run",
+				"read_only": true,
 				"scratch": true
 			}
 		}
@@ -164,8 +165,9 @@
 	},
 	"file_history":
 	[
-		"/home/bhargav/Desktop/dev/CP/Codeforces/MahmoudAndATriangle/a_Good.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/MahmoudAndATriangle/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/GCD_Length/test.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/MahmoudAndATriangle/a_Good.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/YetAnotherCardDeck/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/YetAnotherCardDeck/a.cpp.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/GCD_Length/a.cpp",
@@ -290,8 +292,7 @@
 		"/home/bhargav/Desktop/dev/HelpTheDoon.py",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/Letters/a.cpp",
 		"/home/bhargav/.config/sublime-text-3/Packages/User/CP.sublime-build",
-		"/home/bhargav/.bashrc",
-		"/home/bhargav/.config/sublime-text-3/Packages/User/darwin.sublime-build"
+		"/home/bhargav/.bashrc"
 	],
 	"find":
 	{
@@ -372,19 +373,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/home/bhargav/Desktop/dev/CP/Codeforces/GCD_Length/test.cpp",
+					"file": "/home/bhargav/Desktop/dev/CP/Codeforces/KingsPath/a.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4873,
+						"buffer_size": 1928,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4085,
-								4085
+								0,
+								0
 							]
 						],
 						"settings":
@@ -394,7 +395,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1758.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -402,19 +403,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/home/bhargav/Desktop/dev/CP/Codeforces/MahmoudAndATriangle/a.cpp",
+					"file": "/home/bhargav/Desktop/dev/CP/Codeforces/StudentsAndShoelaces/a.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4047,
+						"buffer_size": 523,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4047,
-								4047
+								272,
+								272
 							]
 						],
 						"settings":
@@ -422,10 +423,10 @@
 							"syntax": "Packages/C++/C++.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1653.0,
+						"translation.y": 57.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -439,19 +440,21 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1,
+						"buffer_size": 69,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1,
-								1
+								41,
+								41
 							]
 						],
 						"settings":
 						{
+							"delete_forb": true,
+							"edit_mode": false,
 							"fold_buttons": false,
 							"line_numbers": false,
 							"syntax": "Packages/CppFastOlympicCoding/TestSyntax.tmLanguage",
@@ -461,7 +464,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -547,7 +550,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
