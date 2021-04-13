@@ -4,12 +4,16 @@
 		"selected_items":
 		[
 			[
-				"lant",
-				"lanterns"
-			],
-			[
 				"pu",
 				"push_back"
+			],
+			[
+				"push",
+				"push_back"
+			],
+			[
+				"lant",
+				"lanterns"
 			],
 			[
 				"was",
@@ -24,19 +28,19 @@
 	"buffers":
 	[
 		{
-			"file": "/home/bhargav/Desktop/dev/CP/Codeforces/SummerSellOff/a.cpp",
+			"file": "/home/bhargav/Desktop/dev/CP/Codeforces/GCD_Length/test.cpp",
 			"settings":
 			{
-				"buffer_size": 4151,
+				"buffer_size": 4873,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/bhargav/Desktop/dev/CP/Codeforces/ColorfulField/a.cpp",
+			"file": "/home/bhargav/Desktop/dev/CP/Codeforces/MahmoudAndATriangle/a.cpp",
 			"settings":
 			{
-				"buffer_size": 4390,
+				"buffer_size": 4047,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -47,8 +51,7 @@
 			{
 				"buffer_size": 1,
 				"line_ending": "Unix",
-				"name": "a.cpp -run",
-				"read_only": true,
+				"name": "a_Good.cpp -run",
 				"scratch": true
 			}
 		}
@@ -96,6 +99,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"fastolym",
+				"FastOlympicCoding: Open Settings"
+			],
+			[
+				"fastolymp",
+				"FastOlympicCoding: Make Stress"
+			],
 			[
 				"theme",
 				"UI: Select Color Scheme"
@@ -153,6 +164,15 @@
 	},
 	"file_history":
 	[
+		"/home/bhargav/Desktop/dev/CP/Codeforces/MahmoudAndATriangle/a_Good.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/MahmoudAndATriangle/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/YetAnotherCardDeck/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/YetAnotherCardDeck/a.cpp.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/GCD_Length/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/ReviewSite/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/Keyboard/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/ColorfulField/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/SummerSellOff/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/LovelyPalindromes/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/CodeJam/AppendSort/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/SortTheArray/a.cpp",
@@ -212,7 +232,6 @@
 		"/home/bhargav/Desktop/dev/CP/Codeforces/EvenOdds/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/IWannaBeTheGuy/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/EvenOdds/a",
-		"/home/bhargav/Desktop/dev/CP/Codeforces/Keyboard/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/Twins/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/Pangram/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/OathOfTheNightsWatch/a.cpp",
@@ -272,8 +291,7 @@
 		"/home/bhargav/Desktop/dev/CP/Codeforces/Letters/a.cpp",
 		"/home/bhargav/.config/sublime-text-3/Packages/User/CP.sublime-build",
 		"/home/bhargav/.bashrc",
-		"/home/bhargav/.config/sublime-text-3/Packages/User/darwin.sublime-build",
-		"/home/bhargav/.config/sublime-text-3/Packages/User/Darwin.sublime-snippet"
+		"/home/bhargav/.config/sublime-text-3/Packages/User/darwin.sublime-build"
 	],
 	"find":
 	{
@@ -291,6 +309,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"int",
+			"Waste\nGrapes\nCarrots\nKiwis\nCarrots\nCarrots",
 			"int",
 			".second",
 			".first",
@@ -352,19 +372,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/home/bhargav/Desktop/dev/CP/Codeforces/SummerSellOff/a.cpp",
+					"file": "/home/bhargav/Desktop/dev/CP/Codeforces/GCD_Length/test.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4151,
+						"buffer_size": 4873,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3987,
-								3987
+								4085,
+								4085
 							]
 						],
 						"settings":
@@ -374,7 +394,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1826.0,
+						"translation.y": 1758.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -382,32 +402,30 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/home/bhargav/Desktop/dev/CP/Codeforces/ColorfulField/a.cpp",
+					"file": "/home/bhargav/Desktop/dev/CP/Codeforces/MahmoudAndATriangle/a.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4390,
+						"buffer_size": 4047,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4349,
-								4349
+								4047,
+								4047
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/C++/C++.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1662.0,
+						"translation.y": 1653.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -443,7 +461,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -499,7 +517,7 @@
 	"project": "Debug.sublime-project",
 	"replace":
 	{
-		"height": 73.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -529,7 +547,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
