@@ -1,0 +1,20 @@
+[
+	{
+		"test": "5\n3\nTMT\n3\nMTT\n6\nTMTMTT\n6\nTMTTTT\n6\nTTMMTT\n\n"
+	},
+	{
+		"test": "1\n9\nTTTMMMTTT\n"
+	},
+	{
+		"test": "1\n9\nTMTMTMTMT\n"
+	},
+	{
+		"test": "1\n10\nTMTMTMTMT\n"
+	},
+	{
+		"test": "1000\n"
+	},
+	{
+		"test": "100000\n"
+	}
+]
