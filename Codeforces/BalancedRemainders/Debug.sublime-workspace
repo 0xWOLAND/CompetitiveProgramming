@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"po",
+				"pop_back"
+			],
+			[
 				"pu",
 				"push_back"
 			],
@@ -28,19 +32,22 @@
 	"buffers":
 	[
 		{
-			"file": "/home/bhargav/Desktop/dev/CP/Codeforces/ChatOnline/a.cpp",
+			"contents": "#include \"bits/stdc++.h\"\nusing namespace std;\n#define pb                push_back\n#define ppb               pop_back\n#define pf                push_front\n#define ppf               pop_front\n#define all(x)            (x).begin(),(x).end()\n#define uniq(v)           (v).erase(unique(all(v)),(v).end())\n#define sz(x)             (int)((x).size())\n#define fr                first\n#define sc                second\n#define rep(i,a,b)        for(int i=a;i<b;i++)\n#define mem1(a)           memset(a,-1,sizeof(a))\n#define mem0(a)           memset(a,0,sizeof(a))\n#define ppc               __builtin_popcount\n#define ppcll             __builtin_popcountll\t\ntypedef vector<int> vi;\ntypedef vector<bool> vb;\ntypedef long long ll;\ntypedef vector<long long> vll;\ntypedef unsigned long long ull;\ntypedef vector<vector<int>> vvi;\ntypedef pair<int, int> pii;\ntypedef pair<pair<int, int>, int> ppi;\ntypedef vector<pair<int, int>> vii;\ntypedef map<int, int> mii;\ntypedef map<char, int> mci;\ntypedef map<int, bool> mib;\ntypedef map<int, string> mis;\ntypedef map<string, int> msi;\ntypedef map<int, char> mic;\ntypedef set<int> si;\ntypedef set<char> sc;\ntypedef set<string> ss;\ntypedef stack<int> sti;\ntypedef stack<string> sts;\ntypedef stack<char> stc;\n\n\n/// Extra Start \n#define nn                    '\\n' \n#define SS                    stringstream \n#define ull                   unsigned long long \n#define mod                   1000000007 \n#define SIZE                  2000001 \n#define space                 \" \" \n#define StringToInt           if ( ! (istringstream(s) >> n) ) n = 0; \n/// Extra End \n \n \n/// Functions Start \n template < class T > T Multiply( T a, T b ){return a * b ;} \ntemplate < class T > T larger( T a, T b ){return ( a > b ? a : b );} \ntemplate < class T > T smaller( T a, T b ){return ( a < b ? a : b );} \ntemplate<class T> T gcd(T a,T b){if(b == 0)return a;return gcd(b,a%b);} \ntemplate<class T> T lcm(T a, T b ){return (a*b)/gcd(a,b);} \ntemplate < class T > string converter( T n ){SS x;x << n;return x.str();}  \n/// Functions End \n \n \n/// Debug Start \ntemplate<class T1> void deb(T1 e1) \n{ \n    cout << e1 << endl; \n} \ntemplate<class T1,class T2> void deb(T1 e1, T2 e2) \n{ \n    cout << e1 << space << e2 << endl; \n} \ntemplate<class T1,class T2,class T3> void deb(T1 e1, T2 e2, T3 e3) \n{ \n    cout << e1 << space << e2 << space << e3 << endl; \n} \ntemplate<class T1,class T2,class T3,class T4> void deb(T1 e1, T2 e2, T3 e3, T4 e4) \n{ \n    cout << e1 << space << e2 << space << e3 << space << e4 << endl; \n} \ntemplate<class T1,class T2,class T3,class T4,class T5> void deb(T1 e1, T2 e2, T3 e3, T4 e4, T5 e5) \n{ \n    cout << e1 << space << e2 << space << e3 << space << e4 << space << e5 << endl; \n} \ntemplate<class T1,class T2,class T3,class T4,class T5,class T6> void deb(T1 e1, T2 e2, T3 e3, T4 e4 ,T5 e5, T6 e6) \n{ \n    cout << e1 << space << e2 << space << e3 << space << e4 << space << e5 << space << e6 << endl; \n} \n/// Debug End \n\ntemplate<typename T1,typename T2>istream& operator>>(istream& in,pair<T1,T2> &a){in>>a.fr>>a.sc;return in;}\ntemplate<typename T1,typename T2>ostream& operator<<(ostream& out,pair<T1,T2> a){out<<a.fr<<\" \"<<a.sc;return out;}\ntemplate<typename T,typename T1>T amax(T &a,T1 b){if(b>a)a=b;return a;}\ntemplate<typename T,typename T1>T amin(T &a,T1 b){if(b<a)a=b;return a;}\n\nconst long long INF=1e18;\nconst int32_t M=1e9+7;\nconst int32_t MM=998244353;\nvoid setIO(string s) {\n  freopen((s + \".in\").c_str(), \"r\", stdin);\n  freopen((s + \".out\").c_str(), \"w\", stdout);\n}\n\nvoid solve(){\n\tint n;\n\tstring s; \n\tcin >> n >> s;\n\tint cur = 0;\n\tfor(int i = 0; i < n; i++){\n\t\tif(i == 0 || s[i] > s[i - 1]){\n\t\t\tcur++;\n\t\t}\n\t\telse{\n\t\t\tcur = 1;\n\t\t}\n\t\tcout << cur << \" \";\n\t}\n\tcout << \"\\n\";\n\n}\nsigned main(){\n    ios_base::sync_with_stdio(false);\n    cin.tie(0);cout.tie(0);\n    // setIO();\n    int t=1;\n    cin>>t;\n    for(int i = 1; i <= t; i++){\n    \tprintf(\"Case %d: \", i);\n    \tsolve();\n    }\n    return 0;\n}\n",
+			"file": "/home/bhargav/Desktop/dev/CP/Kickstart/KickStart2021/a.cpp",
+			"file_size": 3929,
+			"file_write_time": 132632620575479298,
 			"settings":
 			{
-				"buffer_size": 556,
+				"buffer_size": 3929,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "\n1 1 0 4\n2 3\n0 1\n\n3\n\n2 3 0 20\n15 17\n23 26\n1 4\n7 11\n15 17\n\n20\n\n",
+			"contents": "\n2\n4\nABBC\n6\nABACDA\n\n1 2 1 2 \n1 2 1 2 3 1 \nCase 1: Case 2:\n\n",
 			"settings":
 			{
-				"buffer_size": 62,
+				"buffer_size": 59,
 				"line_ending": "Unix",
 				"name": "a.cpp -run",
 				"read_only": true,
@@ -156,6 +163,11 @@
 	},
 	"file_history":
 	[
+		"/home/bhargav/Desktop/dev/CP/Codeforces/GetOrder/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/TMT_Document/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/TheSportsFestival/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/ChatOnline/a.cpp",
+		"/home/bhargav/Desktop/dev/CP/Codeforces/AverageHeight/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/KingsPath/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/StudentsAndShoelaces/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/DreamoonAndWiFi/a.cpp",
@@ -278,16 +290,11 @@
 		"/home/bhargav/Desktop/dev/CP/DarrenYaoBook/Moocast/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/AddAndDivide/a.cpp",
 		"/home/bhargav/Desktop/dev/CP/Codeforces/BalancedRemainders/a.cpp",
-		"/home/bhargav/Desktop/dev/CP/Codeforces/BinaryRemovals/a.cpp",
-		"/home/bhargav/Desktop/dev/CP/Codeforces/SportMafia/a.cpp",
-		"/home/bhargav/Desktop/dev/CP/Codeforces/Sages_Birthday/a.cpp",
-		"/home/bhargav/Desktop/dev/CP/Codeforces/DifferentDivisors/a.cpp",
-		"/home/bhargav/Desktop/dev/CP/CSES/Repetitions.cpp",
-		"/home/bhargav/Desktop/dev/HelpTheDoon.py"
+		"/home/bhargav/Desktop/dev/CP/Codeforces/BinaryRemovals/a.cpp"
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -301,6 +308,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"deb(\"YES\");",
+			"deb(\"NO\");",
+			"return;",
+			"push_back",
 			"int",
 			"Waste\nGrapes\nCarrots\nKiwis\nCarrots\nCarrots",
 			"int",
@@ -335,6 +346,10 @@
 		"regex": false,
 		"replace_history":
 		[
+			"return true;",
+			"",
+			"return false;",
+			"push",
 			"long long",
 			"= ",
 			"->second",
@@ -364,19 +379,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/home/bhargav/Desktop/dev/CP/Codeforces/ChatOnline/a.cpp",
+					"file": "/home/bhargav/Desktop/dev/CP/Kickstart/KickStart2021/a.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 556,
+						"buffer_size": 3929,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								556,
-								556
+								3705,
+								3705
 							]
 						],
 						"settings":
@@ -384,7 +399,7 @@
 							"syntax": "Packages/C++/C++.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1539.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -401,15 +416,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 62,
+						"buffer_size": 59,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								62,
-								62
+								59,
+								59
 							]
 						],
 						"settings":
@@ -481,7 +496,7 @@
 	"project": "Debug.sublime-project",
 	"replace":
 	{
-		"height": 73.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -511,7 +526,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
