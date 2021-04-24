@@ -99,30 +99,8 @@ void setIO(string s) {
 }
 
 void solve(){
-	int n; cin >> n;
-	vii a(n);
 
-	for(int i = 0; i < n; i++){
-		cin >> a[i].first >> a[i].second;
-	}
-	sort(all(a));
-	int ans = 0;
-	int last = INT_MIN;
-	for(int i = 0; i < n; i++){
-		auto itr = a[i];
-		if(itr.first - itr.second > last){
-			ans++;
-			last = itr.first;
-		}
-		else if((i == n - 1) || (itr.first + itr.second < a[i + 1].first)){
-			ans++;
-			last = itr.first + itr.second;
-		}
-		else{
-			last = itr.first;
-		}
-	}
-	deb(ans);
+
 }
 signed main(){
     ios_base::sync_with_stdio(false);

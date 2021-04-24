@@ -97,39 +97,46 @@ void setIO(string s) {
   freopen((s + ".in").c_str(), "r", stdin);
   freopen((s + ".out").c_str(), "w", stdout);
 }
+vi pre(vi a){
+	vi ans(sz(a));
+
+	for(int i = 0; i < sz(a) / 2; i+=2){
+		ans[i] = a[i];
+		ans[i + 1] = a[sz(a) - i - 1];
+	}
+
+	if(sz(a) & 1){
+		ans[sz(a) - 1] = a[sz(a) / 2];
+	}
+
+	return ans;
+}
 
 void solve(){
-	int n; cin >> n;
-	vii a(n);
+    int n, m;
+	cin >> n >> m;
+    int dir = 1;
+	for(int i = 0; i < n; i++){
+		vi v(m);
+		for(int j = 0; j < m; j++) cin >> v[j];
+		if(dir == -1){
+			rotate(v.begin(), v.begin() + i, v.end());
+		}
+		v = pre(v);		
+		for(int j = 0; j < m; j++){
+			cout << v[j] << " " ;
+		}
+		cout << "\n";
+		dir *= -1;
+	}
 
-	for(int i = 0; i < n; i++){
-		cin >> a[i].first >> a[i].second;
-	}
-	sort(all(a));
-	int ans = 0;
-	int last = INT_MIN;
-	for(int i = 0; i < n; i++){
-		auto itr = a[i];
-		if(itr.first - itr.second > last){
-			ans++;
-			last = itr.first;
-		}
-		else if((i == n - 1) || (itr.first + itr.second < a[i + 1].first)){
-			ans++;
-			last = itr.first + itr.second;
-		}
-		else{
-			last = itr.first;
-		}
-	}
-	deb(ans);
 }
 signed main(){
     ios_base::sync_with_stdio(false);
     cin.tie(0);cout.tie(0);
     // setIO();
     int t=1;
-    //cin>>t;
+    cin>>t;
     while(t--) solve();
     return 0;
 }
