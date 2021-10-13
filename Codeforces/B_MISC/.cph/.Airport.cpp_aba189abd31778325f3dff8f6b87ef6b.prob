@@ -1,0 +1,1 @@
+{"name":"Local: Airport","url":"/home/bhargav/Desktop/dev/CP/Codeforces/B_MISC/Airport.cpp","tests":[{"id":1622228353073,"input":"4 3\n2 1 1\n","output":"5 5\n"},{"id":1622228368763,"input":"4 3\n2 2 2\n","output":"7 6\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/bhargav/Desktop/dev/CP/Codeforces/B_MISC/Airport.cpp","group":"local","local":true}

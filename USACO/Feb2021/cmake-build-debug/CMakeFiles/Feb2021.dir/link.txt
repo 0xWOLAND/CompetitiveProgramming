@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Feb2021.dir/A.cpp.o CMakeFiles/Feb2021.dir/ChineseNewYear.cpp.o CMakeFiles/Feb2021.dir/ComfortableCow.cpp.o CMakeFiles/Feb2021.dir/GreenPasture.cpp.o CMakeFiles/Feb2021.dir/RectangularPasture.cpp.o -o Feb2021 

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/PaintingTheBarnGold.dir/PaintingTheBarnGold.cpp.o -o PaintingTheBarnGold 

@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/USACO_GUIDE.dir/CellularNetwork.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/ConventionII/a.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/DiamondCollector/a.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/ForestQueries.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/FuelMountains.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/HaybaleStacking.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/HoofPaperScissors.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/Lifeguards.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/MaximumSubarraySum.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/MilkMeasurement/a.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/MountainView.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/MyCowAteMyHomework.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/OutOfSorts.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/PaintingTheBarn.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/PaintingTheBarnGold.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/PairedUp.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/RangeXorQueries.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/RectangularPasture.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/RentalService.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/SleepyCowHerding/a.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/SnowBoots/a.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/SnowBoots/test_cases.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/SplittingTheField.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/StuckInARut.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/SubarrayDivisibility.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/SubarraySumsI.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/SubarraySumsII.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/SubsequencesSummingToSevens.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/SumOfThreeValues.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/SumOfTwoValues.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/WhyDidTheCowCrossTheRoadII.cpp.o"
+  "CMakeFiles/USACO_GUIDE.dir/palsquare.cpp.o"
+  "USACO_GUIDE"
+  "USACO_GUIDE.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/USACO_GUIDE.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
